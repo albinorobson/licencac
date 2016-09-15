@@ -36,7 +36,7 @@ namespace WindowsFormsApplication1.Classes
                 if (conn == null)
                 {
                     conn = new NpgsqlConnection();
-                    conn.ConnectionString = ("Server=127.0.0.1;Port=5432;Database=postgres;User Id=postgres;Password=postgres;");
+                    conn.ConnectionString = ("Server=postgresql01.cervantestecnologia.hospedagemdesites.ws;Port=5432;Database=cervantestecno1;User Id=cervantestecno1;Password=MA5463890ET;");
                     conn.Open();
                 }
                 if (cmd == null)
@@ -61,6 +61,10 @@ namespace WindowsFormsApplication1.Classes
         {
             try
             {
+                if (cmd == null)
+                {
+                    getcmd();
+                }
                 cmd.CommandText = sql;
                 cmd.ExecuteNonQuery();
 
@@ -80,6 +84,10 @@ namespace WindowsFormsApplication1.Classes
         {
             try
             {
+                if (cmd == null)
+                {
+                    getcmd();
+                }
                 cmd.CommandText = sql;
                 dtreader = cmd.ExecuteReader();
 
