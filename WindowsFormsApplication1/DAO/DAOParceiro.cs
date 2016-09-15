@@ -24,7 +24,7 @@ namespace WindowsFormsApplication1.DAO
                 while (dt.Read())
                 {
                     ClsParceiro parceiro = new ClsParceiro();
-                    parceiro.Id_parceiro = dt.GetInt64(0) ;
+                    parceiro.Id_parceiro = dt.GetInt64(dt.GetOrdinal( 0) ;
                     parceiro.Nome_parceiro = dt.GetString(1);
                     lista.Add(parceiro);
                 }

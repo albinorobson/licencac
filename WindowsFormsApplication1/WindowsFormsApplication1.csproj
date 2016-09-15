@@ -60,7 +60,11 @@
     <Compile Include="Classes\ClsCliente.cs" />
     <Compile Include="Classes\ClsClienteNovo.cs" />
     <Compile Include="Classes\ClsParceiro.cs" />
+    <Compile Include="Classes\datagrid.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Classes\Postgresql.cs" />
+    <Compile Include="DAO\DAOCliente.cs" />
     <Compile Include="DAO\DAOParceiro.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -83,6 +87,8 @@
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <None Include="packages.config" />
+    <None Include="Properties\DataSources\WindowsFormsApplication1.Classes.ClsCliente.datasource" />
+    <None Include="Properties\DataSources\WindowsFormsApplication1.Classes.ClsParceiro.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

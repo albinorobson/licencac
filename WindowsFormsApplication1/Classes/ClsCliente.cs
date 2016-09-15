@@ -17,7 +17,7 @@ namespace WindowsFormsApplication1.Classes
         private Boolean _atualizado;
         private string _cnpj;
         private DateTime _datacriado;
-        private ClsParceiro _parceiro;
+        private ClsParceiro _parceiro = new ClsParceiro();
 
         #endregion
 
