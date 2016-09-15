@@ -21,14 +21,14 @@ namespace WindowsFormsApplication1
         {
             Classes.Postgresql bd = new Classes.Postgresql();
 
-            bd.executasql();
+            //bd.executasql();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             Classes.Postgresql bd = new Classes.Postgresql();
 
-            bd.executasql();
+            //bd.executasql();
 
         }
     }
